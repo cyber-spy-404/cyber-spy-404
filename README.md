@@ -1,9 +1,3 @@
-<a href="https://github.com/cyber-spy-404">
-  <img src="artwork.jpg" align="right" width="250" style="border-radius: 20px; box-shadow: 0px 0px 20px rgba(0, 255, 102, 0.35);" alt="cyber-spy-404" />
-</a>
-
-<br>
-
 <span style="font-size: 42px; font-weight: bold; background: linear-gradient(135deg, #00ff66 0%, #22d3ee 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
   hi, i'm cyber-spy-404 . ✦
 </span>
