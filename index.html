@@ -432,6 +432,93 @@
             letter-spacing: 1px;
         }
 
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card:hover {
+            border-color: var(--primary-cyan);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 255, 255, 0.15);
+        }
+
+        .project-badge {
+            display: inline-block;
+            font-size: 0.7rem;
+            color: var(--primary-green);
+            background: rgba(0, 255, 0, 0.1);
+            border: 1px solid var(--primary-green);
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            width: fit-content;
+            letter-spacing: 1px;
+        }
+
+        .project-title {
+            color: #fff;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .project-desc {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 15px;
+        }
+
+        .project-tag {
+            font-size: 0.7rem;
+            color: var(--primary-cyan);
+            background: rgba(0, 255, 255, 0.08);
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            padding: 2px 7px;
+            border-radius: 3px;
+        }
+
+        .project-link {
+            color: var(--primary-cyan);
+            text-decoration: none;
+            font-size: 0.85rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s;
+            font-weight: 500;
+        }
+
+        .project-link:hover {
+            color: var(--primary-green);
+            text-shadow: 0 0 8px var(--primary-green);
+            transform: translateX(4px);
+        }
+
         /* Timeline (Experience) */
         .timeline {
             position: relative;
@@ -554,6 +641,7 @@
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#tools">Arsenal</a>
+            <a href="#projects">Deployments</a>
             <a href="#experience">History</a>
             <a href="#contact">Contact</a>
         </div>
@@ -568,9 +656,9 @@
                     <span id="typed-text"></span><span class="cursor">_</span>
                 </div>
                 <div class="btn-group">
-                    <a href="#skills" class="cyber-btn">Core Skills</a>
+                    <a href="#projects" class="cyber-btn">Deployments</a>
+                    <a href="#skills" class="cyber-btn cyan">Core Skills</a>
                     <a href="https://github.com/cyber-spy-404" target="_blank" rel="noopener noreferrer" class="cyber-btn cyan">GitHub</a>
-                    <a href="#contact" class="cyber-btn cyan">Contact</a>
                 </div>
             </div>
             
@@ -586,7 +674,7 @@
                     <div class="output">cyber-spy-404</div>
                     
                     <div><span class="prompt">spy@cyber-spy-404:~$</span> <span class="cmd">cat skills.txt</span></div>
-                    <div class="output">Full-Stack Development, Python, React, AI Automation, n8n, FastAPI, Cybersecurity, Forensics</div>
+                    <div class="output">Zero-Knowledge Cryptography (AES-256-GCM), Digital Forensics (BSA/IEA Standards), Automated Web Scraping &amp; Differential Detection, Dual SMTP Architecture (aiosmtpd / TLS), Full-Stack Systems (React, Node.js 22, native node:sqlite), Cloud Storage Pipelines (Supabase &amp; Drive APIs), Bug Bounty &amp; OWASP Top 10, AI Workflows (n8n)</div>
                     
                     <div><span class="prompt">spy@cyber-spy-404:~$</span> <span class="cmd">systemctl status developer</span></div>
                     <div class="output status">[+] ACTIVE (Running) - AVAILABLE FOR MISSIONS</div>
@@ -600,9 +688,9 @@
         <section id="about">
             <h2 class="section-title">Who is cyber-spy-404?</h2>
             <div style="background: var(--glass-bg); padding: 30px; border-left: 3px solid var(--primary-green); font-size: 1.1rem;">
-                <p>An autonomous <strong>Full-Stack Developer</strong>, <strong>AI Automation Specialist</strong>, and <strong>Cybersecurity Researcher</strong> dedicated to engineering high-performance web systems and scalable automated pipelines that eliminate redundant manual workloads.</p>
+                <p>An autonomous <strong>Full-Stack Developer</strong>, <strong>AI Automation Specialist</strong>, and <strong>Cybersecurity &amp; Forensics Engineer</strong> dedicated to building high-integrity cryptographic systems, automated scrapers and dispatchers, and high-performance cloud architectures.</p>
                 <br>
-                <p>Operating at the intersection of modern software development and digital forensics, architecting robust end-to-end applications with secure access controls and intelligent automation workflows using n8n and Python.</p>
+                <p>Creator of production-grade GitHub deployments including zero-knowledge digital evidence vaults (AES-256-GCM / PBKDF2), autonomous university notice scrapers and dual SMTP dispatch networks, high-scale student portals supporting 1,000+ users with cloud storage pipelines, and comprehensive vulnerability research playbooks.</p>
             </div>
         </section>
 
@@ -611,44 +699,52 @@
             <h2 class="section-title">Core Competencies</h2>
             <div class="skills-grid">
                 <!-- Skill Bars dynamically populated by JS -->
+                <div class="skill-item" data-percent="96">
+                    <div class="skill-info"><span>Zero-Knowledge Cryptography (AES-256-GCM / PBKDF2)</span><span class="percent">96%</span></div>
+                    <div class="skill-bar"><div class="skill-progress"></div></div>
+                </div>
                 <div class="skill-item" data-percent="95">
-                    <div class="skill-info"><span>Python &amp; Scripting</span><span class="percent">95%</span></div>
+                    <div class="skill-info"><span>Digital Forensics &amp; Evidence Custody (BSA / IEA Standards)</span><span class="percent">95%</span></div>
+                    <div class="skill-bar"><div class="skill-progress"></div></div>
+                </div>
+                <div class="skill-item" data-percent="95">
+                    <div class="skill-info"><span>Python Web Scraping &amp; Automation (BeautifulSoup / Requests)</span><span class="percent">95%</span></div>
+                    <div class="skill-bar"><div class="skill-progress"></div></div>
+                </div>
+                <div class="skill-item" data-percent="94">
+                    <div class="skill-info"><span>Full-Stack Web (React / Node.js 22 / Native SQLite)</span><span class="percent">94%</span></div>
+                    <div class="skill-bar"><div class="skill-progress"></div></div>
+                </div>
+                <div class="skill-item" data-percent="93">
+                    <div class="skill-info"><span>Dual SMTP Relay &amp; Dispatch Systems (aiosmtpd / TLS)</span><span class="percent">93%</span></div>
+                    <div class="skill-bar"><div class="skill-progress"></div></div>
+                </div>
+                <div class="skill-item" data-percent="95">
+                    <div class="skill-info"><span>AI Automation Pipelines &amp; Task Schedulers (APScheduler / n8n)</span><span class="percent">95%</span></div>
+                    <div class="skill-bar"><div class="skill-progress"></div></div>
+                </div>
+                <div class="skill-item" data-percent="91">
+                    <div class="skill-info"><span>Cloud Storage Pipelines (Supabase / Drive Service APIs)</span><span class="percent">91%</span></div>
                     <div class="skill-bar"><div class="skill-progress"></div></div>
                 </div>
                 <div class="skill-item" data-percent="92">
-                    <div class="skill-info"><span>Full-Stack Web (React / HTML / CSS)</span><span class="percent">92%</span></div>
-                    <div class="skill-bar"><div class="skill-progress"></div></div>
-                </div>
-                <div class="skill-item" data-percent="95">
-                    <div class="skill-info"><span>AI Automation &amp; Workflows (n8n)</span><span class="percent">95%</span></div>
+                    <div class="skill-info"><span>Backend APIs &amp; Microservices (FastAPI / Flask / Express)</span><span class="percent">92%</span></div>
                     <div class="skill-bar"><div class="skill-progress"></div></div>
                 </div>
                 <div class="skill-item" data-percent="90">
-                    <div class="skill-info"><span>Backend APIs &amp; Microservices (FastAPI / Node)</span><span class="percent">90%</span></div>
+                    <div class="skill-info"><span>Web Application Security &amp; Bug Bounty (OWASP Top 10)</span><span class="percent">90%</span></div>
                     <div class="skill-bar"><div class="skill-progress"></div></div>
                 </div>
-                <div class="skill-item" data-percent="88">
-                    <div class="skill-info"><span>Cybersecurity &amp; Defenses</span><span class="percent">88%</span></div>
+                <div class="skill-item" data-percent="96">
+                    <div class="skill-info"><span>Binary EXIF &amp; GPS Metadata Sanitization</span><span class="percent">96%</span></div>
                     <div class="skill-bar"><div class="skill-progress"></div></div>
                 </div>
-                <div class="skill-item" data-percent="85">
-                    <div class="skill-info"><span>Digital Forensics &amp; Incident Response</span><span class="percent">85%</span></div>
+                <div class="skill-item" data-percent="92">
+                    <div class="skill-info"><span>High-FPS DOM &amp; VRAM Performance Engineering</span><span class="percent">92%</span></div>
                     <div class="skill-bar"><div class="skill-progress"></div></div>
                 </div>
                 <div class="skill-item" data-percent="90">
-                    <div class="skill-info"><span>Linux / Unix Systems</span><span class="percent">90%</span></div>
-                    <div class="skill-bar"><div class="skill-progress"></div></div>
-                </div>
-                <div class="skill-item" data-percent="85">
-                    <div class="skill-info"><span>Database Systems &amp; Architecture</span><span class="percent">85%</span></div>
-                    <div class="skill-bar"><div class="skill-progress"></div></div>
-                </div>
-                <div class="skill-item" data-percent="88">
-                    <div class="skill-info"><span>Network Security &amp; Protocols</span><span class="percent">88%</span></div>
-                    <div class="skill-bar"><div class="skill-progress"></div></div>
-                </div>
-                <div class="skill-item" data-percent="86">
-                    <div class="skill-info"><span>Git, CI/CD &amp; Cloud Deployment</span><span class="percent">86%</span></div>
+                    <div class="skill-info"><span>Linux Systems, Docker &amp; CI/CD (Render Blueprints)</span><span class="percent">90%</span></div>
                     <div class="skill-bar"><div class="skill-progress"></div></div>
                 </div>
             </div>
@@ -658,16 +754,102 @@
         <section id="tools">
             <h2 class="section-title">Arsenal & Tech Stack</h2>
             <div class="glass-grid">
-                <div class="glass-card"><div class="card-icon">🐍</div><div class="card-title">Python</div></div>
-                <div class="glass-card"><div class="card-icon">⚛️</div><div class="card-title">React JS</div></div>
-                <div class="glass-card"><div class="card-icon">⚡</div><div class="card-title">FastAPI</div></div>
-                <div class="glass-card"><div class="card-icon">🤖</div><div class="card-title">n8n Automation</div></div>
-                <div class="glass-card"><div class="card-icon">🎨</div><div class="card-title">Tailwind CSS</div></div>
-                <div class="glass-card"><div class="card-icon">🛡️</div><div class="card-title">Cyber Security</div></div>
+                <div class="glass-card"><div class="card-icon">🛡️</div><div class="card-title">Zero-Knowledge Crypto</div></div>
                 <div class="glass-card"><div class="card-icon">🔍</div><div class="card-title">Digital Forensics</div></div>
-                <div class="glass-card"><div class="card-icon">🐉</div><div class="card-title">Kali / Linux</div></div>
-                <div class="glass-card"><div class="card-icon">🐳</div><div class="card-title">Docker</div></div>
+                <div class="glass-card"><div class="card-icon">🐍</div><div class="card-title">Python (Flask / APScheduler)</div></div>
+                <div class="glass-card"><div class="card-icon">⚡</div><div class="card-title">Node.js 22 &amp; node:sqlite</div></div>
+                <div class="glass-card"><div class="card-icon">⚛️</div><div class="card-title">React &amp; Tailwind CSS</div></div>
+                <div class="glass-card"><div class="card-icon">🤖</div><div class="card-title">n8n Automation</div></div>
+                <div class="glass-card"><div class="card-icon">📬</div><div class="card-title">Dual SMTP (aiosmtpd / TLS)</div></div>
+                <div class="glass-card"><div class="card-icon">☁️</div><div class="card-title">Supabase &amp; Cloud Storage</div></div>
+                <div class="glass-card"><div class="card-icon">🕷️</div><div class="card-title">Bug Bounty (OWASP Top 10)</div></div>
+                <div class="glass-card"><div class="card-icon">🧹</div><div class="card-title">EXIF / GPS Stripper</div></div>
+                <div class="glass-card"><div class="card-icon">🚀</div><div class="card-title">Render Blueprints</div></div>
                 <div class="glass-card"><div class="card-icon">🐙</div><div class="card-title">Git &amp; GitHub</div></div>
+            </div>
+        </section>
+
+        <!-- Projects / GitHub Deployments Section -->
+        <section id="projects">
+            <h2 class="section-title">GitHub Deployments</h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div>
+                        <span class="project-badge">ZERO-KNOWLEDGE / FORENSICS</span>
+                        <h3 class="project-title">Women's Cyber Safety Vault</h3>
+                        <p class="project-desc">A forensic-grade digital evidence custody platform with client-side AES-256-GCM envelope encryption, PBKDF2 key derivation, SHA-256 fingerprinting, automatic EXIF/GPS stripping, and courtroom-admissible digital custodian seals (BSA Sec 63 / IEA Sec 65B).</p>
+                        <div class="project-tags">
+                            <span class="project-tag">AES-256-GCM</span>
+                            <span class="project-tag">PBKDF2</span>
+                            <span class="project-tag">Node.js 22</span>
+                            <span class="project-tag">node:sqlite</span>
+                            <span class="project-tag">Render Blueprint</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/cyber-spy-404/womens-cyber-safety-vault" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <span>View Repository</span> →
+                    </a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div>
+                        <span class="project-badge">AUTOMATION / SCRAPING</span>
+                        <h3 class="project-title">Notice &amp; Dual SMTP Dispatcher</h3>
+                        <p class="project-desc">Autonomous web scraper and notification pipeline checking university notice portals daily at 00:00 IST. Implements differential change detection, dual local aiosmtpd and external TLS relays, and bulk student mailer.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python 3.13</span>
+                            <span class="project-tag">Flask</span>
+                            <span class="project-tag">APScheduler</span>
+                            <span class="project-tag">BeautifulSoup4</span>
+                            <span class="project-tag">aiosmtpd</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/cyber-spy-404/rgu-notices" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <span>View Repository</span> →
+                    </a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div>
+                        <span class="project-badge">HIGH-SCALE / CLOUD</span>
+                        <h3 class="project-title">Enterprise Student &amp; Cloud Portal</h3>
+                        <p class="project-desc">Full-scale education management web system supporting 1,000+ active students, cutting administrative workload by 85%. Incorporates dual cloud storage (Supabase + Google Drive 15GB Service Account) and VRAM-optimized DOM rendering.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Full-Stack</span>
+                            <span class="project-tag">Supabase</span>
+                            <span class="project-tag">Google Drive API</span>
+                            <span class="project-tag">Gzip / Caching</span>
+                            <span class="project-tag">Webhooks</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/cyber-spy-404" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <span>View Ecosystem</span> →
+                    </a>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div>
+                        <span class="project-badge">OFFENSIVE SECURITY</span>
+                        <h3 class="project-title">Bug Bounty Resources &amp; Playbooks</h3>
+                        <p class="project-desc">Comprehensive open-source repository containing vulnerability hunting methodologies, OWASP Top 10 testing workflows, recon automation guides, and offensive security reference libraries.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Bug Bounty</span>
+                            <span class="project-tag">OWASP Top 10</span>
+                            <span class="project-tag">Burp Suite</span>
+                            <span class="project-tag">Recon</span>
+                            <span class="project-tag">AppSec</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/cyber-spy-404/Bug-Bounty-Resources" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <span>View Repository</span> →
+                    </a>
+                </div>
+
             </div>
         </section>
 
@@ -678,29 +860,29 @@
                 <div class="timeline-item left">
                     <div class="timeline-content">
                         <div class="timeline-date">2024 - Present</div>
-                        <h3>AI Automation &amp; Full-Stack Developer</h3>
-                        <p>Architecting AI-driven automation workflows and full-stack systems. Reduced administrative workloads by 85% and engineered systems serving 1,000+ active users.</p>
+                        <h3>Privacy-First Forensics Architecture</h3>
+                        <p>Engineered zero-knowledge digital custody vault (AES-256-GCM, PBKDF2, legal cryptographic seals) supporting courtroom verification under BSA Sec 63 / IEA Sec 65B.</p>
                     </div>
                 </div>
                 <div class="timeline-item right">
                     <div class="timeline-content">
                         <div class="timeline-date">2024 - Present</div>
-                        <h3>B.Sc. in Computer Science</h3>
-                        <p>Undergraduate studies with high focus on Full-Stack Software Engineering, AI Automation, and Cyber Defense systems.</p>
+                        <h3>Autonomous Notice &amp; SMTP Pipelines</h3>
+                        <p>Constructed automated nightly web scraper with differential change detection and dual local/external SMTP relay architecture.</p>
                     </div>
                 </div>
                 <div class="timeline-item left">
                     <div class="timeline-content">
                         <div class="timeline-date">2023 - 2024</div>
-                        <h3>Cybersecurity &amp; Forensics Research</h3>
-                        <p>Investigating web application attack vectors, defensive hardening, network monitoring, and forensic artifacts recovery.</p>
+                        <h3>High-Scale Systems &amp; Cloud Pipelines</h3>
+                        <p>Deployed web systems supporting 1,000+ active students, slashing administrative overhead by 85% via Supabase and Google Drive Service Account pipelines.</p>
                     </div>
                 </div>
                 <div class="timeline-item right">
                     <div class="timeline-content">
                         <div class="timeline-date">2022 - 2023</div>
-                        <h3>Backend &amp; API Development</h3>
-                        <p>Constructing scalable RESTful APIs, automation scripts in Python, and responsive user interfaces.</p>
+                        <h3>Security Research &amp; Bug Bounty</h3>
+                        <p>Curated and published offensive security playbooks, vulnerability testing methodologies, and recon tooling.</p>
                     </div>
                 </div>
             </div>
@@ -786,10 +968,11 @@
         // Typing Effect
         const titles = [
             "Full-Stack Developer",
+            "Zero-Knowledge & Forensics Engineer",
             "AI Automation Specialist",
-            "Cybersecurity & Forensics Enthusiast",
-            "Python & Backend Architect",
-            "Workflow Pipeline Engineer"
+            "Python & Web Scraping Architect",
+            "Dual SMTP & Cloud Pipeline Engineer",
+            "Bug Bounty & Security Researcher"
         ];
         
         let titleIndex = 0;
