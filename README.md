@@ -1,119 +1,134 @@
-<!-- ======================================================== -->
-<!--               ANIMATED CYBER-SPY-404 HEADER              -->
-<!-- ======================================================== -->
+<a href="https://github.com/cyber-spy-404">
+  <img src="artwork.jpg" align="right" width="250" style="border-radius: 20px; box-shadow: 0px 0px 20px rgba(0, 255, 102, 0.35);" alt="cyber-spy-404" />
+</a>
+
+<br>
+
+<span style="font-size: 42px; font-weight: bold; background: linear-gradient(135deg, #00ff66 0%, #22d3ee 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+  hi, i'm cyber-spy-404 . ✦
+</span>
+
+<br><br>
+
+> *full-stack developer & zero-knowledge security researcher*
+
+<br>
+
+<p align="left">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=15&pause=1000&color=22D3EE&background=0D1117&vCenter=true&width=435&lines=>+initialize+cyber-spy-404;>+encrypting+payload+(AES-256-GCM)...;>+sealing+digital+custody+(BSA+Sec+63)...;>+scraping+university+notices...;>+system+status:+online!" alt="Typing SVG Terminal" />
+</p>
+
+i write code late at night, building zero-knowledge architectures, automated pipelines, and exploring digital forensics .
+
+<br>
+
+<b>current focus</b>
+
+&nbsp;›&nbsp; zero-knowledge <b>cryptography & client-side encryption</b><br>
+&nbsp;›&nbsp; automated <b>web scraping & differential detection</b><br>
+&nbsp;›&nbsp; late nights <b>& complex databases</b>
+
+<br>
+
+<b>currently exploring</b>
+
+&nbsp;›&nbsp; legal <b>chain-of-custody (BSA Sec 63 / IEA Sec 65B)</b><br>
+&nbsp;›&nbsp; <b>Node.js 22 LTS</b> native sqlite & microservices<br>
+&nbsp;›&nbsp; <b>bug bounty</b> & offensive security playbooks
+
+<br>
+
+<b>workspace & tools</b>
+
+&nbsp;›&nbsp; os: <b>windows / linux (kali)</b><br>
+&nbsp;›&nbsp; editor: <b>vs code</b><br>
+&nbsp;›&nbsp; terminal: <b>powershell / zsh</b>
+
+<br>
+
+<br clear="all">
+
+---
+
+<b>featured deployments</b>
+<br><br>
+
+&nbsp;›&nbsp; 🛡️ <b><a href="https://github.com/cyber-spy-404/womens-cyber-safety-vault">womens-cyber-safety-vault</a></b> — zero-knowledge digital evidence custody platform with AES-256-GCM, PBKDF2 & legal digital seals (BSA Sec 63 / IEA Sec 65B)<br>
+&nbsp;›&nbsp; 🏛️ <b><a href="https://github.com/cyber-spy-404/rgu-notices">rgu-notices</a></b> — autonomous university notice scraper & dual SMTP relay dispatch system running nightly on APScheduler<br>
+&nbsp;›&nbsp; 🕷️ <b><a href="https://github.com/cyber-spy-404/Bug-Bounty-Resources">Bug-Bounty-Resources</a></b> — curated vulnerability hunting methodologies, recon automation tooling & OWASP Top 10 checklists<br>
+&nbsp;›&nbsp; 🌐 <b><a href="https://cyber-spy-404.github.io">cyber-spy-404.github.io</a></b> — official cyberpunk hud portfolio homepage
+
+<br>
+
+---
+
+<b>technologies & tools</b>
+<br><br>
+
+<details open>
+  <summary><b>&nbsp;›&nbsp; backend & cryptography</b></summary>
+  <br>
+  <p align="left">
+    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+    <img src="https://img.shields.io/badge/Node.js_22-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
+    <img src="https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
+    <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" />
+    <img src="https://img.shields.io/badge/AES--256--GCM-00ff66?style=for-the-badge&logoColor=black" alt="AES-256-GCM" />
+  </p>
+</details>
+
+<details>
+  <summary><b>&nbsp;›&nbsp; databases & cloud storage</b></summary>
+  <br>
+  <p align="left">
+    <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" />
+    <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" />
+    <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+    <img src="https://img.shields.io/badge/Google_Drive_API-4285F4?style=for-the-badge&logo=googledrive&logoColor=white" alt="Google Drive API" />
+  </p>
+</details>
+
+<details>
+  <summary><b>&nbsp;›&nbsp; frontend & ui</b></summary>
+  <br>
+  <p align="left">
+    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+    <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="TailwindCSS" />
+    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+  </p>
+</details>
+
+<details>
+  <summary><b>&nbsp;›&nbsp; automation, security & devops</b></summary>
+  <br>
+  <p align="left">
+    <img src="https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white" alt="n8n" />
+    <img src="https://img.shields.io/badge/Burp_Suite-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white" alt="Burp Suite" />
+    <img src="https://img.shields.io/badge/Linux_Kali-557C94?style=for-the-badge&logo=kalilinux&logoColor=white" alt="Kali Linux" />
+    <img src="https://img.shields.io/badge/Render-000000?style=for-the-badge&logo=render&logoColor=white" alt="Render" />
+    <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+    <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+  </p>
+</details>
+
+<br>
+
+---
+
+<b>github telemetry</b>
+<br><br>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,24,30&height=220&section=header&text=CYBER-SPY-404&fontSize=48&fontColor=00ff66&animation=twinkling&fontAlignY=36&desc=Zero-Knowledge%20Cryptography%20%7C%20Digital%20Forensics%20%7C%20Full-Stack%20Architect&descAlignY=62&descSize=16&descAlign=50" width="100%" alt="cyber-spy-404 Header Banner" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=cyber-spy-404&theme=matrix&hide_border=true&background=0D1117&ring=00FF66&fire=00FF66&currStreakNum=00FF66&sideNums=22D3EE&sideLabels=888888&dates=888888" alt="cyber-spy-404 streak" />
 </p>
 
 <p align="center">
   <a href="https://cyber-spy-404.github.io">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=00FF66&center=true&vCenter=true&width=750&lines=%5B%2B%5D+SYSTEM+STATUS%3A+ONLINE+%2F%2F+OPERATIONAL;Zero-Knowledge+Cryptography+(AES-256-GCM+%2F+PBKDF2);Digital+Forensics+%26+Evidence+Custody+(BSA%2FIEA);Autonomous+Web+Scrapers+%26+Dual+SMTP+Relays;High-Scale+Web+Architecture+(1%2C000%2B+Active+Users);Bug+Bounty+Hunter+%26+Offensive+Security+Researcher" alt="Animated Typing SVG" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://cyber-spy-404.github.io">
-    <img src="https://img.shields.io/badge/🌐_LIVE_HOMEPAGE-cyber--spy--404.github.io-00ff66?style=for-the-badge&labelColor=030805" alt="Homepage" />
+    <img src="https://img.shields.io/badge/🌐_PORTFOLIO-cyber--spy--404.github.io-00ff66?style=for-the-badge&labelColor=0D1117" alt="Portfolio" />
   </a>
   <a href="mailto:cyber-spy-404@proton.me">
-    <img src="https://img.shields.io/badge/📧_TRANSMISSION-cyber--spy--404@proton.me-22d3ee?style=for-the-badge&labelColor=030805" alt="Email" />
+    <img src="https://img.shields.io/badge/📧_TRANSMISSION-cyber--spy--404@proton.me-22d3ee?style=for-the-badge&labelColor=0D1117" alt="Transmission" />
   </a>
-  <img src="https://img.shields.io/badge/SECURITY_CLEARANCE-LEVEL--5-bb00ff?style=for-the-badge&labelColor=030805" alt="Clearance" />
-</p>
-
----
-
-### 💻 System Terminal (`whoami`)
-
-```bash
-spy@cyber-spy-404:~$ whoami
-cyber-spy-404
-
-spy@cyber-spy-404:~$ cat skills.txt
-Zero-Knowledge Cryptography (AES-256-GCM), Digital Forensics (BSA/IEA Standards), 
-Automated Web Scraping, Dual SMTP Architecture (aiosmtpd/TLS), Full-Stack Systems 
-(React, Node.js 22, native node:sqlite), Cloud Storage Pipelines (Supabase & Drive APIs), 
-Bug Bounty & OWASP Top 10, AI Workflows (n8n)
-
-spy@cyber-spy-404:~$ systemctl status developer
-[+] ACTIVE (Running) - AVAILABLE FOR MISSIONS
-```
-
----
-
-### 📊 Live GitHub Telemetry & Activity
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=cyber-spy-404&show_icons=true&theme=matrix&hide_border=false&include_all_commits=true&count_private=true&title_color=00ff66&text_color=22d3ee&icon_color=00ff66&bg_color=030805&border_color=00ff66" alt="GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=cyber-spy-404&theme=matrix&hide_border=false&stroke=00ff66&ring=00ff66&fire=00ff66&currStreakLabel=00ff66&background=030805&border=00ff66" alt="GitHub Streak" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cyber-spy-404&layout=compact&theme=matrix&hide_border=false&title_color=00ff66&text_color=22d3ee&bg_color=030805&border_color=00ff66" alt="Top Languages" />
-</p>
-
----
-
-### 🚀 Technical Skills & Core Competencies
-
-#### 🛡️ Cryptography & Digital Forensics
-- **Zero-Knowledge Architecture:** Client-side envelope encryption with **AES-256-GCM (256-bit FEK)** and master key derivation via **PBKDF2-HMAC-SHA256 (600,000 iterations)**.
-- **Legal Chain-of-Custody:** SHA-256 digital fingerprinting, HMAC-SHA256 custodial sealing, and tamper verification meeting **Bharatiya Sakshya Adhiniyam (BSA Sec 63)** and **Indian Evidence Act (IEA Sec 65B)** digital evidence admissibility standards.
-- **Privacy & Binary Sanitization:** Binary EXIF, GPS, and device metadata stripping (`APP1/0xFFE1` for JPEG, `tEXt/zTXt/eXIf` for PNG).
-- **Disaster Recovery:** Offline disaster recovery via **24-word BIP-39 mnemonic recovery phrases**.
-
-#### 🤖 Web Scraping, SMTP & Automation
-- **Autonomous Scrapers:** Differential change-detection web crawlers (Python, BeautifulSoup4, Requests) scheduled nightly via **APScheduler**.
-- **Dual SMTP Protocol Systems:** Built-in local mail capture server using **`aiosmtpd`** paired with production external SMTP relays (Gmail TLS, Amazon SES, Brevo) and live diagnostic handshakes.
-- **AI & Workflow Pipelines:** Automated node orchestration using **n8n**, Moltbot, and custom Python automation scripts eliminating repetitive operations.
-
-#### 🌐 Full-Stack & Cloud Engineering
-- **Modern Full-Stack:** React, Node.js 22 LTS with native **`node:sqlite`**, Python (FastAPI, Flask), Tailwind CSS, and Vanilla JS.
-- **Cloud Storage Pipelines:** Multi-tier storage routing integrating **Supabase Cloud Storage** and **Google Drive Service Account (15GB)** automated pipelines.
-- **High-Performance Web:** Zero-downtime containerization with **Render Blueprints (`render.yaml`)**, Gzip compression, 24h caching, and DOM layout-thrashing / VRAM lock elimination.
-
-#### 🕷️ Offensive Security & Bug Bounty
-- **Vulnerability Assessment:** OWASP Top 10 web exploitation, API fuzzing, and security testing using Burp Suite and Nmap.
-- **Security Research:** Curated bug bounty methodologies, reconnaissance automation pipelines, and offensive playbooks.
-
----
-
-### 📂 Featured GitHub Deployments
-
-| Repository | Focus & Architecture | Stack |
-| :--- | :--- | :--- |
-| **[`womens-cyber-safety-vault`](https://github.com/cyber-spy-404/womens-cyber-safety-vault)** | Zero-knowledge forensic digital evidence custody platform (BSA Sec 63 / IEA Sec 65B compliance) | `Node.js 22`, `node:sqlite`, `AES-256-GCM`, `PBKDF2`, `Render` |
-| **[`rgu-notices`](https://github.com/cyber-spy-404/rgu-notices)** | Autonomous university notice scraper & dual SMTP relay dispatch system | `Python 3.13`, `Flask`, `APScheduler`, `BeautifulSoup4`, `aiosmtpd` |
-| **[`AlHidayet_Mission`](https://github.com/cyber-spy-404)** | High-scale educational portal serving 1,000+ active users; 85% admin workload reduction | `Full-Stack`, `Supabase`, `Google Drive API`, `High-FPS DOM` |
-| **[`Bug-Bounty-Resources`](https://github.com/cyber-spy-404/Bug-Bounty-Resources)** | Comprehensive bug bounty methodology, reconnaissance tooling, and testing checklists | `Bug Bounty`, `OWASP Top 10`, `Burp Suite`, `Recon` |
-
----
-
-### 🛠️ Arsenal & Tech Stack
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js_22-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![n8n](https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-
----
-
-### 📡 Establish Connection
-
-- 🌐 **Portfolio Website:** [cyber-spy-404.github.io](https://cyber-spy-404.github.io)
-- 📧 **Transmission:** [cyber-spy-404@proton.me](mailto:cyber-spy-404@proton.me)
-- 🐙 **GitHub Profile:** [@cyber-spy-404](https://github.com/cyber-spy-404)
-
----
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,24,30&height=120&section=footer" width="100%" alt="Footer Banner" />
 </p>
