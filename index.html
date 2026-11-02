@@ -519,6 +519,193 @@
             transform: translateX(4px);
         }
 
+        /* Animated Profile HUD */
+        .about-layout {
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            gap: 40px;
+            align-items: stretch;
+        }
+
+        @media (max-width: 900px) {
+            .about-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .profile-hud-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 30px rgba(0, 255, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .profile-hud-card:hover {
+            border-color: var(--primary-green);
+            box-shadow: 0 0 35px rgba(0, 255, 0, 0.2);
+        }
+
+        .profile-hud-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; height: 2px;
+            background: linear-gradient(90deg, transparent, var(--primary-green), var(--primary-cyan), transparent);
+            animation: topBarGlow 3s ease-in-out infinite;
+        }
+
+        @keyframes topBarGlow {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 1; }
+        }
+
+        .radar-box {
+            position: relative;
+            width: 190px;
+            height: 190px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px 0 20px 0;
+        }
+
+        .radar-ring {
+            position: absolute;
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .radar-ring-1 {
+            width: 185px;
+            height: 185px;
+            border: 1px dashed rgba(0, 255, 0, 0.35);
+            animation: spinCW 25s linear infinite;
+        }
+
+        .radar-ring-2 {
+            width: 150px;
+            height: 150px;
+            border: 2px solid transparent;
+            border-top: 2px solid var(--primary-cyan);
+            border-bottom: 2px solid var(--primary-cyan);
+            animation: spinCCW 12s linear infinite;
+        }
+
+        .radar-ring-3 {
+            width: 120px;
+            height: 120px;
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.1) inset;
+        }
+
+        .radar-sweep {
+            position: absolute;
+            width: 185px;
+            height: 185px;
+            border-radius: 50%;
+            background: conic-gradient(from 0deg, rgba(0, 255, 0, 0.25) 0deg, transparent 60deg, transparent 360deg);
+            animation: spinCW 4s linear infinite;
+            pointer-events: none;
+        }
+
+        .avatar-core {
+            position: relative;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: radial-gradient(circle, #0a1f12 0%, #030805 100%);
+            border: 2px solid var(--primary-green);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.6rem;
+            box-shadow: 0 0 25px rgba(0, 255, 0, 0.4);
+            z-index: 2;
+            overflow: hidden;
+            animation: avatarPulse 4s ease-in-out infinite;
+        }
+
+        @keyframes avatarPulse {
+            0%, 100% { box-shadow: 0 0 20px rgba(0, 255, 0, 0.4); }
+            50% { box-shadow: 0 0 35px rgba(0, 255, 255, 0.7); }
+        }
+
+        .avatar-laser {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 3px;
+            background: var(--primary-cyan);
+            box-shadow: 0 0 8px var(--primary-cyan);
+            animation: scanVertical 2.5s ease-in-out infinite;
+        }
+
+        @keyframes spinCW {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes spinCCW {
+            from { transform: rotate(360deg); }
+            to { transform: rotate(0deg); }
+        }
+
+        @keyframes scanVertical {
+            0%, 100% { top: 0%; opacity: 0.2; }
+            50% { top: 95%; opacity: 1; }
+        }
+
+        .profile-telemetry {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 0.75rem;
+            border-top: 1px solid rgba(0, 255, 0, 0.2);
+            padding-top: 15px;
+        }
+
+        .tele-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .tele-label {
+            color: var(--text-muted);
+        }
+
+        .tele-value {
+            color: var(--primary-cyan);
+            font-weight: 600;
+        }
+
+        .tele-status-live {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--primary-green);
+        }
+
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--primary-green);
+            box-shadow: 0 0 8px var(--primary-green);
+            animation: pulseGlow 1.5s infinite;
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.4); opacity: 0.5; }
+        }
+
         /* Timeline (Experience) */
         .timeline {
             position: relative;
@@ -687,10 +874,65 @@
         <!-- About Section -->
         <section id="about">
             <h2 class="section-title">Who is cyber-spy-404?</h2>
-            <div style="background: var(--glass-bg); padding: 30px; border-left: 3px solid var(--primary-green); font-size: 1.1rem;">
-                <p>An autonomous <strong>Full-Stack Developer</strong>, <strong>AI Automation Specialist</strong>, and <strong>Cybersecurity &amp; Forensics Engineer</strong> dedicated to building high-integrity cryptographic systems, automated scrapers and dispatchers, and high-performance cloud architectures.</p>
-                <br>
-                <p>Creator of production-grade GitHub deployments including zero-knowledge digital evidence vaults (AES-256-GCM / PBKDF2), autonomous university notice scrapers and dual SMTP dispatch networks, high-scale student portals supporting 1,000+ users with cloud storage pipelines, and comprehensive vulnerability research playbooks.</p>
+            <div class="about-layout">
+                <!-- Left: Animated Hologram Profile HUD -->
+                <div class="profile-hud-card">
+                    <div style="font-size: 0.75rem; color: var(--primary-green); letter-spacing: 2px; text-transform: uppercase;">
+                        [ IDENT // COGNITIVE NODE ]
+                    </div>
+                    
+                    <div class="radar-box">
+                        <div class="radar-ring radar-ring-1"></div>
+                        <div class="radar-ring radar-ring-2"></div>
+                        <div class="radar-ring radar-ring-3"></div>
+                        <div class="radar-sweep"></div>
+                        <div class="avatar-core">
+                            <span>🛡️</span>
+                            <div class="avatar-laser"></div>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; margin-bottom: 15px;">
+                        <div style="font-size: 1.25rem; font-weight: 700; color: #fff; letter-spacing: 1px;">CYBER-SPY-404</div>
+                        <div style="font-size: 0.75rem; color: var(--primary-cyan); margin-top: 3px;">Full-Stack &amp; Forensics Engineer</div>
+                    </div>
+
+                    <div class="profile-telemetry">
+                        <div class="tele-row">
+                            <span class="tele-label">SYSTEM STATUS:</span>
+                            <span class="tele-status-live"><span class="pulse-dot"></span> ONLINE</span>
+                        </div>
+                        <div class="tele-row">
+                            <span class="tele-label">CLEARANCE:</span>
+                            <span class="tele-value">LEVEL-5 CLASSIFIED</span>
+                        </div>
+                        <div class="tele-row">
+                            <span class="tele-label">CIPHER CORE:</span>
+                            <span class="tele-value">AES-256-GCM / PBKDF2</span>
+                        </div>
+                        <div class="tele-row">
+                            <span class="tele-label">RUNTIME ENGINE:</span>
+                            <span class="tele-value">Node 22 LTS / Python 3.13</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Bio and Mission Details -->
+                <div style="background: var(--glass-bg); padding: 35px; border-left: 3px solid var(--primary-green); font-size: 1.05rem; display: flex; flex-direction: column; justify-content: center; border-radius: 0 10px 10px 0;">
+                    <p style="margin-bottom: 15px;">An autonomous <strong>Full-Stack Developer</strong>, <strong>AI Automation Specialist</strong>, and <strong>Cybersecurity &amp; Forensics Engineer</strong> dedicated to building high-integrity cryptographic systems, automated scrapers and dispatchers, and high-performance cloud architectures.</p>
+                    <p style="margin-bottom: 15px;">Creator of production-grade GitHub deployments including zero-knowledge digital evidence vaults (AES-256-GCM / PBKDF2), autonomous university notice scrapers and dual SMTP dispatch networks, high-scale student portals supporting 1,000+ users with cloud storage pipelines, and comprehensive vulnerability research playbooks.</p>
+                    <div style="display: flex; gap: 15px; margin-top: 15px; flex-wrap: wrap;">
+                        <div style="font-size: 0.8rem; background: rgba(0, 255, 0, 0.08); border: 1px solid rgba(0, 255, 0, 0.3); padding: 6px 12px; border-radius: 4px; color: var(--primary-green);">
+                            🔒 Zero-Knowledge Architecture
+                        </div>
+                        <div style="font-size: 0.8rem; background: rgba(0, 255, 255, 0.08); border: 1px solid rgba(0, 255, 255, 0.3); padding: 6px 12px; border-radius: 4px; color: var(--primary-cyan);">
+                            ⚖️ BSA Sec 63 / IEA Sec 65B Forensics
+                        </div>
+                        <div style="font-size: 0.8rem; background: rgba(187, 0, 255, 0.08); border: 1px solid rgba(187, 0, 255, 0.3); padding: 6px 12px; border-radius: 4px; color: var(--primary-purple);">
+                            ⚡ 1,000+ Active Users Deployed
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
