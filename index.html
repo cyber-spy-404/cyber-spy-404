@@ -421,9 +421,26 @@
         }
 
         .card-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 48px;
             font-size: 2.5rem;
             color: var(--primary-cyan);
             margin-bottom: 15px;
+        }
+
+        .card-icon img, .card-icon svg {
+            width: 42px;
+            height: 42px;
+            object-fit: contain;
+            filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.25));
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .glass-card:hover .card-icon img, .glass-card:hover .card-icon svg {
+            transform: scale(1.12);
+            filter: drop-shadow(0 0 12px var(--primary-green));
         }
 
         .card-title {
@@ -887,7 +904,11 @@
                         <div class="radar-ring radar-ring-3"></div>
                         <div class="radar-sweep"></div>
                         <div class="avatar-core">
-                            <span>🛡️</span>
+                            <svg viewBox="0 0 24 24" width="46" height="46" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-green); filter: drop-shadow(0 0 12px rgba(0, 255, 0, 0.7)); z-index: 1;">
+                                <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" fill="rgba(0, 255, 0, 0.15)" stroke="var(--primary-green)" stroke-width="1.8"/>
+                                <path d="M12 7v5" stroke="var(--primary-cyan)" stroke-width="2"/>
+                                <circle cx="12" cy="15.5" r="1.5" fill="var(--primary-cyan)"/>
+                            </svg>
                             <div class="avatar-laser"></div>
                         </div>
                     </div>
@@ -996,18 +1017,95 @@
         <section id="tools">
             <h2 class="section-title">Arsenal & Tech Stack</h2>
             <div class="glass-grid">
-                <div class="glass-card"><div class="card-icon">🛡️</div><div class="card-title">Zero-Knowledge Crypto</div></div>
-                <div class="glass-card"><div class="card-icon">🔍</div><div class="card-title">Digital Forensics</div></div>
-                <div class="glass-card"><div class="card-icon">🐍</div><div class="card-title">Python (Flask / APScheduler)</div></div>
-                <div class="glass-card"><div class="card-icon">⚡</div><div class="card-title">Node.js 22 &amp; node:sqlite</div></div>
-                <div class="glass-card"><div class="card-icon">⚛️</div><div class="card-title">React &amp; Tailwind CSS</div></div>
-                <div class="glass-card"><div class="card-icon">🤖</div><div class="card-title">n8n Automation</div></div>
-                <div class="glass-card"><div class="card-icon">📬</div><div class="card-title">Dual SMTP (aiosmtpd / TLS)</div></div>
-                <div class="glass-card"><div class="card-icon">☁️</div><div class="card-title">Supabase &amp; Cloud Storage</div></div>
-                <div class="glass-card"><div class="card-icon">🕷️</div><div class="card-title">Bug Bounty (OWASP Top 10)</div></div>
-                <div class="glass-card"><div class="card-icon">🧹</div><div class="card-title">EXIF / GPS Stripper</div></div>
-                <div class="glass-card"><div class="card-icon">🚀</div><div class="card-title">Render Blueprints</div></div>
-                <div class="glass-card"><div class="card-icon">🐙</div><div class="card-title">Git &amp; GitHub</div></div>
+                <div class="glass-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-green); width: 42px; height: 42px;">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="rgba(0,255,0,0.1)"></path>
+                            <rect x="9" y="10" width="6" height="5" rx="1" stroke="var(--primary-cyan)" stroke-width="1.8"></rect>
+                            <path d="M10 10V8a2 2 0 0 1 4 0v2" stroke="var(--primary-cyan)" stroke-width="1.8"></path>
+                        </svg>
+                    </div>
+                    <div class="card-title">Zero-Knowledge Crypto</div>
+                </div>
+                <div class="glass-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-cyan); width: 42px; height: 42px;">
+                            <circle cx="11" cy="11" r="8" fill="rgba(0,255,255,0.08)"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65" stroke="var(--primary-green)" stroke-width="2.2"></line>
+                            <path d="M11 6v3m0 4v3m-5-5h3m4 0h3" stroke="var(--primary-cyan)" stroke-width="1.5"></path>
+                        </svg>
+                    </div>
+                    <div class="card-title">Digital Forensics</div>
+                </div>
+                <div class="glass-card">
+                    <div class="card-icon">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python Logo" />
+                    </div>
+                    <div class="card-title">Python (Flask / APScheduler)</div>
+                </div>
+                <div class="glass-card">
+                    <div class="card-icon">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="Node.js Logo" />
+                    </div>
+                    <div class="card-title">Node.js 22 &amp; node:sqlite</div>
+                </div>
+                <div class="glass-card">
+                    <div class="card-icon">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React Logo" />
+                    </div>
+                    <div class="card-title">React &amp; Tailwind CSS</div>
+                </div>
+                <div class="glass-card">
+                    <div class="card-icon">
+                        <img src="https://cdn.simpleicons.org/n8n/EA4B71" alt="n8n Logo" />
+                    </div>
+                    <div class="card-title">n8n Automation</div>
+                </div>
+                <div class="glass-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-cyan); width: 42px; height: 42px;">
+                            <rect x="2" y="4" width="20" height="15" rx="2" fill="rgba(0,255,255,0.08)"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            <circle cx="18" cy="17" r="3" fill="#030805" stroke="var(--primary-green)" stroke-width="1.5"></circle>
+                            <path d="M18 16v2" stroke="var(--primary-green)"></path>
+                        </svg>
+                    </div>
+                    <div class="card-title">Dual SMTP (aiosmtpd / TLS)</div>
+                </div>
+                <div class="glass-card">
+                    <div class="card-icon">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/supabase/supabase-original.svg" alt="Supabase Logo" />
+                    </div>
+                    <div class="card-title">Supabase &amp; Cloud Storage</div>
+                </div>
+                <div class="glass-card">
+                    <div class="card-icon">
+                        <img src="https://cdn.simpleicons.org/owasp/00ff66" alt="OWASP Logo" />
+                    </div>
+                    <div class="card-title">Bug Bounty (OWASP Top 10)</div>
+                </div>
+                <div class="glass-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-green); width: 42px; height: 42px;">
+                            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" fill="rgba(0,255,0,0.08)"></path>
+                            <circle cx="12" cy="13" r="4"></circle>
+                            <line x1="3" y1="3" x2="21" y2="21" stroke="#ff003c" stroke-width="2.2"></line>
+                        </svg>
+                    </div>
+                    <div class="card-title">EXIF / GPS Stripper</div>
+                </div>
+                <div class="glass-card">
+                    <div class="card-icon">
+                        <img src="https://cdn.simpleicons.org/render/ffffff" alt="Render Logo" />
+                    </div>
+                    <div class="card-title">Render Blueprints</div>
+                </div>
+                <div class="glass-card">
+                    <div class="card-icon">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="Git Logo" />
+                    </div>
+                    <div class="card-title">Git &amp; GitHub</div>
+                </div>
             </div>
         </section>
 

@@ -62,8 +62,11 @@
     <br><br>
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="40" height="40" alt="Git" title="Git"/> &nbsp;
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" width="40" height="40" alt="GitHub" title="GitHub"/> &nbsp;
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" width="40" height="40" alt="Linux" title="Linux"/> &nbsp;
+    <img src="https://cdn.simpleicons.org/n8n/EA4B71" width="40" height="40" alt="n8n" title="n8n Automation"/> &nbsp;
+    <img src="https://cdn.simpleicons.org/owasp/00ff66" width="40" height="40" alt="OWASP" title="OWASP Top 10"/> &nbsp;
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" width="40" height="40" alt="Linux" title="Linux / Kali"/> &nbsp;
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" width="40" height="40" alt="Docker" title="Docker"/> &nbsp;
+    <img src="https://cdn.simpleicons.org/render/ffffff" width="40" height="40" alt="Render" title="Render"/> &nbsp;
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" width="40" height="40" alt="VSCode" title="VS Code"/> &nbsp;
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg" width="40" height="40" alt="Bash" title="Bash / Zsh"/>
 </p>
